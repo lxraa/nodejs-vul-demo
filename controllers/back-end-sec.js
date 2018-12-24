@@ -43,7 +43,7 @@ var BeSec = {
 		});
 	},
 
-		 : function(req,res){
+	getStatic : function(req,res){
 		var static_path = "/../static/"
 		var r = fs.readFileSync(__dirname+static_path+req.query.file,function(){});
 		res.append("Content-Type","text/javascript");
