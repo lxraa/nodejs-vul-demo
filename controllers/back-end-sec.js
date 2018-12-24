@@ -14,7 +14,7 @@ var BeSec = {
 			var data = {
 				1:{user:"user1",data:"order1"},
 				2:{user:"user2",data:"order2"},
-				3:{user:"user3",data:"order3"}
+				123:{user:"user3",data:"git search 是个好东西"}
 			}
 			res.send(data[req.query.orderId].data);
 		}
@@ -43,7 +43,7 @@ var BeSec = {
 		});
 	},
 
-	getStatic : function(req,res){
+		 : function(req,res){
 		var static_path = "/../static/"
 		var r = fs.readFileSync(__dirname+static_path+req.query.file,function(){});
 		res.append("Content-Type","text/javascript");

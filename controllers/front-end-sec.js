@@ -55,7 +55,7 @@ var FeSec = {
 				form.method = "POST";
 
 				params = {
-					ssoid : "B928B0C5B24EADE89D839217CA7943E1"
+					ssoid : "awxizy7kr8djodlsha194tov"
 				}
 
 				for (var x in params) {
